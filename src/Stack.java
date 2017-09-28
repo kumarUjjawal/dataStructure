@@ -73,27 +73,34 @@ public class Stack {
             }
         }
 
-//        // Format the top line in stack
-//
-//        System.out.print("________");
-//        for (int i = 0; i < index; i++) { System.out.print("_"); }
-//
-//        for (int i = 0; i < data; i++) { System.out.print("_"); }
-//
-//        System.out.println();
-//
-//        // Create format specific for index width and data width
-//
-//        String index_width = "%-" + index + "s";
-//        String data_width = "%-" + data + "s";
+        // Format the top line in the stack
+        System.out.print(" _____");
+        for(int i = 0; i < index; i++) System.out.print("_");
+        for(int i = 0; i < data; i++) System.out.print("_");
+        System.out.println();
+
+        // Create format specifiers for the index width and data width
+        String index_width = "%-" + index + "s";
+        String data_width = "%-" + data + "s";
 
         for(int i = size-1; i >= 0; i--) {
-            if (contents[i] != "-1") {      // If an object exists, output the data
-                System.out.println(contents[i]);
-            } else {    // Output just the index and a blank space
-                System.out.println(i);
+
+            if (contents[i] != "-1") { // If an object exists, output the data
+                System.out.printf("| " + index_width + " | " + data_width +" |\n", i, contents[i]);
+
+            } else { // Output just the index and a blank space
+                System.out.printf("| " + index_width + " | " + data_width +" |\n", i, "");
+
             }
         }
+        // Format the bottom line in the stack
+        System.out.print("|__");
+        for(int i = 0; i < index; i++) System.out.print("_");
+
+        System.out.print("|__");
+        for(int i = 0; i < data; i++) System.out.print("_");
+
+        System.out.println("|\n");
 
     }
 
