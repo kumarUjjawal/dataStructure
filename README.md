@@ -1,6 +1,6 @@
-DataStructure Implementation in JAVA
+#DataStructure Implementation in JAVA
 
-Sorting
+##Sorting
 
 1. Bubble Sort
 2. Heap Sort
@@ -9,5 +9,5 @@ Sorting
 5. Selection Sort
 6. Insertion Sort
 
-Data Structure
+##Data Structure
 1. Stack
