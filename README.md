@@ -1,4 +1,4 @@
-DataStructure Implementation in JAVA
+DataStructure and Algorithms in JAVA
 
 Sorting
 
